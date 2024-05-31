@@ -18,6 +18,7 @@ import { StoryDetailComponent } from './story-detail/story-detail.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 // import { BookingPageComponent } from './booking-page/booking-page.component';
 import { BookingPageComponent } from './booking-page/booking-page.component';
+import { HighlightDirective } from './highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { BookingPageComponent } from './booking-page/booking-page.component';
     StoryDetailComponent,
     TopNavComponent,
     BookingPageComponent,
+    HighlightDirective,
 
       ],
   imports: [
