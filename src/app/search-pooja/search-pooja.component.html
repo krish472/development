@@ -1,0 +1,32 @@
+<div class="col-12">
+    <div class="container">
+        <div class="row">
+            <form [formGroup]="searchForm">
+            <div class="col-12 d-flex">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="name">Search Pooja</label>
+                        <ng-select class="form-control custom-ng-select" bindLabel="name" bindValue="_id" [items]="poojaName" formControlName="poojaName" placeholder="Select Pooja"></ng-select>
+                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                    <label for="loaction">City</label>
+                    <input type="text" class="form-control" placeholder="Type the city name" formControlName="city">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                    <label for="submit">Submit</label>
+                    <button type="button" class="btn btn-primary form-control" (click)="searchPooja()">
+                        Search
+                    </button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        
+    </div>
+</div>

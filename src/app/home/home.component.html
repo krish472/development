@@ -1,0 +1,60 @@
+<div class="col-12 p-0">
+    <div class="col-12 p-0 bannerImg">
+    <div class="container bannerDiv">
+        <div class="m-auto text-align-center">
+            <img src="assets/Hindu Cosmos.jpg" class="banTitImg">
+        </div>
+        <div class="">
+        <div class=" m-auto text-center m-3">
+        <h1 class="bannerText">
+        <!-- न-गुरोरधिकं-तत्त्वं-न-गुरोरधिकं-तपः-तत्त्वज्ञानात्-परं-नास्ति-तस्मै-श्रीगुरवे-नम -->
+        अज्ञानतिमिरान्धस्य ज्ञानाञ्जनशालाकया ।
+चक्षुरुन्मीलितं येन तस्मै श्रीगुरवे नमः ॥
+    </h1>
+
+        <h3 class="bannerSubtext">
+            My Salutations to that reverent Guru, 
+            who opened my inner eyes and removed the darkness of ignorance from my blind eyes by applying the light of self-knowledge.
+        </h3>
+        </div>
+        <div class="col-12">
+            <app-search-pooja></app-search-pooja>
+        </div>
+        </div>
+    </div></div>
+    <div class="col-12 listOuterDiv p-0">
+    <div class="row">
+        <div class="col-12">
+            <div class="col-12">
+                <div class="col-12">
+                    <div class="m-auto text-center">
+                    <h2 class="home-tit">
+                        Perform your pooja as per vedic ritual at your home with your convinient date and time.
+                    </h2></div>
+                <div class="row card-space">
+                <div class="col-12 horizonScroll d-flex">
+               <div class="card customCard col-4" style="width: 18rem;" *ngFor="let item of nameListDt; let i = index">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name}}</h5>
+                      <p class="card-text">{{item.contact}} {{item.area}}</p>
+                      <p class="card-text addText">{{item.address}}</p>
+                      <hr class="horizonLine">
+                      <a class="btn btn-primary" (click)="booknow(item)">Book</a>
+                    </div>
+                </div>
+                </div>
+            
+            </div>
+                </div>
+            </div>
+            <!-- <div class="col-6">
+
+            </div> -->
+        </div>
+    </div>
+    </div>
+
+    <div class="col-12 p-0 advanSection">
+        <app-advan-section></app-advan-section>
+    </div>
+</div>

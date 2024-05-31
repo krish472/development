@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row agent-card">
+        <div class="col-12">
+            <div class="outerHeading">
+                <span class="m-auto text-center-left">Booking for {{bookingdetails?.name}}</span>
+            </div>
+        </div>
+        <div class="col-12 mt-1">
+            <div class="row">
+                <div class="col-4">
+                    <div class="p-3">
+                        <img src="assets/profile.png" class="agentImg">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class=" p-2">
+                        <span class="slotText">Next Available Slots are below : </span>
+                        <div class="mt-1">
+                        <span class="slot" *ngFor="let slot of availableSlots">
+                            <button class="btn btn-primary m-1">{{slot}}</button>
+                        </span>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+    
+</div>

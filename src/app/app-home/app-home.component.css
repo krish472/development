@@ -1,0 +1,123 @@
+.card-space{
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+   display: flex;
+   width: 50vw;
+   height: 50vh;
+}
+.outerDiv{
+    
+}
+.customCard{
+    border: none;
+    /* box-shadow: ; */
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    display: inline-block; /* Display cards in a row */
+  /* width: 18rem; Set the width of each card */
+  margin-right: 10px;
+
+}
+.horizonLine{
+    color: red;
+}
+.addText{
+    color: gray;
+    font-weight: bold;
+}
+.horizonScroll{
+    /* white-space: nowrap; /* Prevent line breaks */
+  /* overflow-x: auto; Enable horizontal scrolling */
+/* width: 100%; */
+}
+ul{
+  list-style: none;
+  padding: 0px 10px !important;
+  display: flex !important;
+  margin-bottom: 0;
+}
+li{
+  padding: 10px;
+  background: white;
+  color: red;
+  border-radius: 10px 0px 0px 10px !important;
+  border: 1px solid red;
+  font-size: 12px;
+  text-transform: uppercase;
+  
+
+}
+li:last-child{
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+.active{
+  background: red;
+  color: white;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.welcome{
+font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: .02em;
+    color: #095d59;
+    font-family: Recoleta !important;
+}
+.sub-text{
+  font-size: 16px;
+    color: #095d59;
+    text-align: center;
+}
+.welcomeTit{
+
+}
+.img-list{
+  width: 100%;
+  /*height: 250px;*/
+}
+.sub-lines{
+  font-size: 14px;
+  color: #000;
+  opacity: 0.7;
+}
+.fixed-width{
+  /* width: 50vw; */
+  /* height: 50vh; */
+  display: grid;
+  /* display: grid; */
+    grid-auto-flow: column;
+    /* grid-column-gap: 33px; */
+    /* grid-template-columns: 100% auto; */
+    /* grid-template-columns: 100% ,100% ,100%; */
+    /* grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr); */
+    grid-template-columns: 1fr;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.column-gap{
+  column-gap: 20px;
+  height: 250px;
+}
+.fixed-height{
+  /* height: 250px; */
+}
+.flex-nowrap{
+  overflow-x: scroll;
+  /* flex-wrap: nowrap; */
+}
+.animation{
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  0% {
+      transform: translate(0)
+  }
+
+  to {
+      transform: translate(-100%)
+  }
+}

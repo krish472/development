@@ -1,0 +1,41 @@
+.advanTit{
+    color: blueviolet;
+    /* text-emphasis-st; */
+    font-size: 32px;   
+}
+.advanOuter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-advan{
+    height: 155px;
+}
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* Set the number of lines to display */
+    -webkit-line-clamp: 5; /* For WebKit browsers */
+    line-clamp: 5; /* For other browsers */
+    margin-bottom: .5rem !important;
+  }
+ @keyframes moving {
+ 0% {
+    transform: translate(0);
+}
+100% {
+    transform: translate(-100%);
+}
+ }
+ .descOuter{
+    animation: moving 20s ease-in-out infinite alternate;
+    padding-bottom: 3.5rem !important;
+ }
+ .container{
+    padding :2rem 0 2rem 0 !important
+ }
+ .readmore{
+    color: red;
+    cursor: pointer;
+ }

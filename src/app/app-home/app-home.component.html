@@ -1,0 +1,90 @@
+<div class="col-12">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <ul class="col-4">
+                        <li class="" (click)="navigateToSignin()" [ngClass]="{'active':signin}">
+                            <a class="">Sign In
+                            </a>
+                            </li>
+                        <li class="" (click)="navigateToSignUp()" [ngClass]="{'active':!signin}">
+                            <a class="">Sign Up
+                                </a>
+                            </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row" *ngIf="!signin">
+                    <app-sign-up></app-sign-up>
+                </div>
+                <div class="row" *ngIf="signin">
+
+            <app-sign-in></app-sign-in>
+            </div>
+
+            </div>
+            
+        </div>
+        <div class="col-6 outerDiv" *ngIf="signin">
+            <!-- <div class="row card-space horizonScroll">
+                
+               <div class="card customCard" style="width: 18rem;" *ngFor="let item of nameListDt; let i = index">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name}}</h5>
+                      <p class="card-text">{{item.contact}} {{item.area}}</p>
+                      <p class="card-text addText">{{item.address}}</p>
+                      <hr class="horizonLine">
+                      <a href="#" class="btn btn-primary">Book</a>
+                    </div>
+                  </div>
+            
+            </div> -->
+
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="center-box">
+                        <h2 class="welcome">Welcome to Nithyam Poojai</h2>
+                        <p class="sub-text">Let the divine presence fill your home with joy, prosperity, and peace.</p>
+                        <div class="col-12">
+                            <div class="row m-0 flex-nowrap">
+                                <div class="col-8"  *ngFor="let item of imageContent">
+                                    <div class="col-12">
+                                        <img [src]="item.image" class="img-list">
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="sub-lines">
+                                            {{item.content}}
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+
+<!-- <div class="row m-0 flex-nowrap">
+    <div class="col-12 d-flex"  *ngFor="let item of imageContent">
+        <div class="col-6">
+            <img [src]="item.image" class="img-list">
+        </div>
+        <div class="col-6">
+            <p class="sub-lines">
+                {{item.content}}
+            </p>
+        </div>
+    </div>
+
+</div> -->

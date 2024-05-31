@@ -13,9 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my_project",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "outputHashing": "none",
             "polyfills": [
               "zone.js"
             ],
@@ -25,9 +26,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8c51e40c-da81-47df-a084-cb835f7d2c2c"
   }
 }

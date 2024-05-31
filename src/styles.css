@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+    /* background-image: url('src/assets/back_image.avif'); */
+    /* opacity: 0.8; */
+    overflow-x: hidden;
+}
+.row , .d-flex{
+    display: flex;
+}
+.btn.btn-primary{
+    background: red;
+    color: white;
+    border-radius: 15px !important;
+    /* outline: none !important; */
+    border: none !important;
+    box-shadow: inset;
+}
+.col-12 , .col-6 , .col-4 , .col-3{
+    padding: 15px !important;
+}
+div , ul ,li ,a , h1,h2,h3,p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*::-webkit-scrollbar{
+    color: brown;
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: brown;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+    width: 5px;
+    /* height: ; */
+    color: aliceblue;
+}
+.form-control{
+    border-radius: 20px !important;
+}
